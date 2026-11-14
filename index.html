@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Pembelajaran Trigonometri Kelas 12</title>
+    <!-- Tailwind CSS CDN untuk styling modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .math-font {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
 
+    <!-- Header / Navbar -->
+    <header class="bg-indigo-600 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Matematika Tingkat Lanjut: Trigonometri Kelas 12</h1>
+            <nav class="space-x-4 hidden md:flex">
+                <a href="#rumus" class="hover:text-indigo-200 transition">Rumus Dasar</a>
+                <a href="#limit" class="hover:text-indigo-200 transition">Limit Trigonometri</a>
+                <a href="#turunan" class="hover:text-indigo-200 transition">Turunan Trigonometri</a>
+                <a href="#kuis" class="hover:text-indigo-200 transition">Kuis Interaktif</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-violet-600 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Kuasai Trigonometri Kelas 12 dengan Mudah</h2>
+            <p class="text-indigo-100 text-lg mb-8">Pelajari konsep Limit dan Turunan Fungsi Trigonometri lengkap dengan rumus praktis dan latihan soal interaktif.</p>
+            <a href="#limit" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-50 transition">Mulai Belajar</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Bagian 1: Rumus Penting -->
+        <section id="rumus" class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100">
+            <h3 class="text-2xl font-bold text-indigo-600 mb-4">1. Ringkasan Rumus Dasar & Sudut Rangkap</h3>
+            <p class="text-slate-600 mb-6">Sebelum masuk ke materi kelas 12, pastikan kamu mengingat kembali identitas dan rumus sudut rangkap berikut:</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <h4 class="font-semibold text-slate-700 mb-2">Identitas Trigonometri Dasar</h4>
+                    <ul class="space-y-2 text-sm math-font">
+                        <li>• $\sin^2 x + \cos^2 x = 1$</li>
+                        <li>• $1 + \tan^2 x = \sec^2 x$</li>
+                        <li>• $1 + \cot^2 x = \csc^2 x$</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <h4 class="font-semibold text-slate-700 mb-2">Rumus Sudut Rangkap</h4>
+                    <ul class="space-y-2 text-sm math-font">
+                        <li>• $\sin 2x = 2 \sin x \cos x$</li>
+                        <li>• $\cos 2x = \cos^2 x - \sin^2 x = 1 - 2\sin^2 x = 2\cos^2 x - 1$</li>
+                        <li>• $\tan 2x = \frac{2 \tan x}{1 - \tan^2 x}$</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Limit Fungsi Trigonometri -->
+        <section id="limit" class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100">
+            <h3 class="text-2xl font-bold text-indigo-600 mb-4">2. Limit Fungsi Trigonometri</h3>
+            <p class="text-slate-600 mb-4">
+                Limit fungsi trigonometri adalah nilai yang mendekati suatu sudut pada fungsi trigonometri saat peubahnya mendekati nilai tertentu.
+            </p>
+            
+            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl mb-6">
+                <h4 class="font-bold text-indigo-900 mb-2">Teorema Dasar Limit Trigonometri ($x \to 0$):</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center math-font text-indigo-900 font-semibold">
+                    <div class="bg-white p-2 rounded shadow-sm">$\lim_{x \to 0} \frac{\sin x}{x} = 1$</div>
+                    <div class="bg-white p-2 rounded shadow-sm">$\lim_{x \to 0} \frac{x}{\sin x} = 1$</div>
+                    <div class="bg-white p-2 rounded shadow-sm">$\lim_{x \to 0} \frac{\tan x}{x} = 1$</div>
+                    <div class="bg-white p-2 rounded shadow-sm">$\lim_{x \to 0} \frac{x}{\tan x} = 1$</div>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="font-semibold text-slate-700">Contoh Soal & Pembahasan:</h4>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <p class="font-medium text-slate-800">Tentukan nilai dari: $\lim_{x \to 0} \frac{\sin 3x}{2x}$</p>
+                    <p class="text-slate-600 mt-2 text-sm">
+                        <strong>Penyelesaian:</strong> Menggunakan sifat dasar limit $\lim_{x \to 0} \frac{\sin ax}{bx} = \frac{a}{b}$, maka:<br>
+                        $\lim_{x \to 0} \frac{\sin 3x}{2x} = \frac{3}{2}$
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Turunan Fungsi Trigonometri -->
+        <section id="turunan" class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100">
+            <h3 class="text-2xl font-bold text-indigo-600 mb-4">3. Turunan Fungsi Trigonometri</h3>
+            <p class="text-slate-600 mb-4">
+                Turunan fungsi trigonometri melibatkan laju perubahan fungsi trigonometri terhadap variabel sudutnya.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 math-font">
+                    <p class="font-bold text-slate-700 mb-2 font-sans">Rumus Dasar Turunan:</p>
+                    <ul class="space-y-1 text-sm">
+                        <li>• Jika $f(x) = \sin x$, maka $f'(x) = \cos x$</li>
+                        <li>• Jika $f(x) = \cos x$, maka $f'(x) = -\sin x$</li>
+                        <li>• Jika $f(x) = \tan x$, maka $f'(x) = \sec^2 x$</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 math-font">
+                    <p class="font-bold text-slate-700 mb-2 font-sans">Aturan Rantai (Chain Rule):</p>
+                    <ul class="space-y-1 text-sm">
+                        <li>• Jika $f(x) = \sin(ax+b)$, maka $f'(x) = a \cdot \cos(ax+b)$</li>
+                        <li>• Jika $f(x) = \cos(ax+b)$, maka $f'(x) = -a \cdot \sin(ax+b)$</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 4: Kuis Interaktif -->
+        <section id="kuis" class="bg-indigo-900 text-white p-6 md:p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Kuis Latihan Pemahaman</h3>
+            <div id="quiz-container">
+                <div class="mb-6">
+                    <p id="question-text" class="text-lg font-medium mb-4">1. Berapakah nilai dari $\lim_{x \to 0} \frac{\sin 4x}{\sin 2x}$?</p>
+                    <div id="options-container" class="space-y-3">
+                        <label class="block bg-indigo-800 p-3 rounded-lg cursor-pointer hover:bg-indigo-700 transition">
+                            <input type="radio" name="quiz" value="A" class="mr-2"> A. 1
+                        </label>
+                        <label class="block bg-indigo-800 p-3 rounded-lg cursor-pointer hover:bg-indigo-700 transition">
+                            <input type="radio" name="quiz" value="B" class="mr-2"> B. 2
+                        </label>
+                        <label class="block bg-indigo-800 p-3 rounded-lg cursor-pointer hover:bg-indigo-700 transition">
+                            <input type="radio" name="quiz" value="C" class="mr-2"> C. 4
+                        </label>
+                        <label class="block bg-indigo-800 p-3 rounded-lg cursor-pointer hover:bg-indigo-700 transition">
+                            <input type="radio" name="quiz" value="D" class="mr-2"> D. 0.5
+                        </label>
+                    </div>
+                </div>
+                <button onclick="checkAnswer()" class="bg-white text-indigo-900 font-bold px-6 py-2 rounded-lg hover:bg-indigo-100 transition">Jawab</button>
+                <p id="quiz-result" class="mt-4 font-semibold text-lg"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 text-center py-6 mt-12">
+        <p>&copy; 2026 Modul Pembelajaran Matematika Kelas 12. Dibuat untuk kemudahan belajar.</p>
+    </footer>
+
+    <!-- JavaScript untuk Interaktif Kuis -->
+    <script>
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="quiz"]:checked');
+            const resultText = document.getElementById('quiz-result');
+            
+            if (!selected) {
+                resultText.textContent = "Silakan pilih salah satu jawaban terlebih dahulu!";
+                resultText.className = "mt-4 font-semibold text-yellow-400";
+                return;
+            }
+
+            if (selected.value === "B") {
+                resultText.textContent = "Benar! $\lim_{x \to 0} \frac{\sin 4x}{\sin 2x} = \frac{4}{2} = 2$.";
+                resultText.className = "mt-4 font-semibold text-green-400";
+            } else {
+                resultText.textContent = "Kurang tepat. Ingat rumus koefisien $\frac{a}{b}$ untuk limit fungsi trigonometri sederhana.";
+                resultText.className = "mt-4 font-semibold text-red-400";
+            }
+        }
+    </script>
+</body>
+</html>
